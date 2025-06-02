@@ -1,0 +1,108 @@
+:root {
+    --title-color: #2E3440;
+    --background-color: #F5F7FA;
+    --main-section-color: #708090;
+    --main-section-compliment-color: #4A90E2;
+    --shadow-color: black;
+    --main-section-p-color: black;
+    --button-input-text: white;
+    --link-color: #4A90E2;
+    --explanation-color: #2E3440;
+    --explanation-text: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    padding: 10px 10px;
+    margin-top: 150px;
+    text-align: center;
+    color: var(--title-color);
+    font-size: 50px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-section-color);
+    margin: 0 auto;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px var(--shadow-color);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    gap: 7px;
+}
+
+#text-input {
+    background-color: var(--main-section-color);
+    color: var(--button-input-text);
+    padding: 0 10px;
+    border: none;
+    border-bottom: 1px solid var(--main-section-compliment-color);
+    text-align: center;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: var(--button-input-text);
+}
+
+.main-section>p {
+    font-size: 18px;
+    color: var(--main-section-p-color);
+}
+
+button {
+    background-color: var(--main-section-compliment-color);
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: var(--button-input-text);
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#check-palindrome {
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+.explanation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--explanation-color);
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    color: var(--explanation-text);
+    box-shadow: 0 5px 5px var(--shadow-color);
+    font-size: 18px;
+}
+
+.explanation>p>a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.explanation>p>a:hover {
+    text-decoration: underline;
+}
